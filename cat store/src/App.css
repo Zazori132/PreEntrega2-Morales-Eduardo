@@ -1,0 +1,84 @@
+/* Establecer colores personalizados */
+:root {
+    --primary-bg-color: #F9DB9B; /* Fondo primario */
+    --secondary-bg-color: #F9C852; /* Fondo secundario */
+    --navbar-bg-color: #BE701D; /* Fondo de la barra de navegación */
+    --text-color: #FFFFFF; /* Color de texto */
+    --cart-bg-color: #B5BB19; /* Fondo del carrito */
+    --badge-bg-color: #DC3545; /* Fondo de la etiqueta de notificación */
+  }
+  
+  body {
+    background-color: var(--primary-bg-color);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .app-container {
+    padding: 20px;
+  }
+  
+  /* Ajustes para el carrito en la barra de navegación */
+  .navbar-nav .cart-widget {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el ícono del carrito en la barra de navegación */
+  .navbar-nav .cart-icon {
+    font-size: 28px;
+    margin-right: 5px;
+    color: var(--text-color);
+  }
+  
+  /* Estilos para la etiqueta de notificación en la barra de navegación */
+  .navbar-nav .badge {
+    background-color: var(--badge-bg-color);
+    margin-left: 5px;
+  }
+  
+  /* Estilos para la barra de navegación */
+  header {
+    background-color: var(--navbar-bg-color);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Estilos para el logotipo en la barra de navegación */
+  .navbar-brand {
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Estilos para los enlaces de navegación en la barra de navegación */
+  .navbar-nav .nav-link {
+    color: var(--text-color);
+    margin-right: 15px;
+  }
+  
+  /* Estilos para el contenedor del carrito en la barra de navegación */
+  .cart-widget {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  /* Estilos para el ícono del carrito en la barra de navegación */
+  .cart-icon {
+    font-size: 24px;
+    margin-right: 5px;
+    color: var(--text-color);
+  }
+  
+  /* Estilos para la etiqueta de notificación en la barra de navegación */
+  .badge {
+    background-color: var(--badge-bg-color);
+    margin-left: 5px;
+  }
+  .custom-navbar {
+    background-color: #BE701D; /* Reemplaza 'your-custom-color' con el color deseado */
+    color: #ffffff; /* Puedes personalizar el color del texto si es necesario */
+  }
