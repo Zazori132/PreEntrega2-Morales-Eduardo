@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import ItemDetail from './ItemDetail';
 
 const ItemDetailContainer = () => {
-  const [item, setItem] = useState(null);
-  const [loading, setLoading] = useState(true);
+ const [item, setItem] = useState(null);
+ const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+ useEffect(() => {
     const fetchItem = async () => {
       try {
         // Simulamos una llamada asíncrona con un tiempo de espera de 2 segundos
@@ -30,9 +30,9 @@ const ItemDetailContainer = () => {
     };
 
     fetchItem();
-  }, []);
+ }, []);
 
-  return (
+ return (
     <div className="item-detail-container">
       <h2>Detalles del producto</h2>
       {loading ? (
@@ -41,7 +41,7 @@ const ItemDetailContainer = () => {
         <ItemDetail item={item} />
       )}
     </div>
-  );
+ );
 }
 
 export default ItemDetailContainer;

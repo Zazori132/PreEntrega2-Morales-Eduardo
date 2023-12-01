@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Item = ({ item }) => {
-  // Manejo de ítem nulo
-  if (!item) {
+ // Manejo de ítem nulo
+ if (!item) {
     return <p>Ítem no disponible</p>;
-  }
+ }
 
-  return (
+ return (
     <div className="card">
       {/* Enlace al detalle del ítem */}
       <Link to={`/item/${item.id}`}>
@@ -20,8 +20,7 @@ const Item = ({ item }) => {
         {/* Agrega más detalles según sea necesario */}
       </div>
     </div>
-  );
+ );
 }
 
 export default Item;
-

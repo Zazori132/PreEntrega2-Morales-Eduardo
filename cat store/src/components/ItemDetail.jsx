@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ItemDetail = ({ item }) => {
-  return (
+ return (
     <div className="card">
       <img src={item.pictureUrl} className="card-img-top" alt={item.title} />
       <div className="card-body">
@@ -10,7 +10,7 @@ const ItemDetail = ({ item }) => {
         <p className="card-text">${item.price}</p>
       </div>
     </div>
-  );
+ );
 }
 
 export default ItemDetail;
